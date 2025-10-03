@@ -24,7 +24,6 @@ pipeline {
                 sh './mvnw test'
             }
         }
-
         stage('Run') {
             steps {
                 sh 'pkill -f spring-demo || true'
